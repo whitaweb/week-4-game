@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/darkness.png');
+  font-size: 18px;
+  line-height: 34px;
+  font-family: 'Arial', 'Helvetica New', Helvetica, sans-serif;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
