@@ -8,8 +8,7 @@ $(document).ready(function() {
 var counter = 0;
 var wins = 0;
 var losses = 0;
-	// $('#win').text(wins);
-	// $('#loss').text(losses);
+	
 
 
 
@@ -26,10 +25,12 @@ var losses = 0;
 function reset () {
 
 	randomNumber = Math.floor(Math.random() * 101) + 19;
+	$('#value').html(randomNumber);
 	img1Num = Math.floor(Math.random() * 12) + 1;
 	img2Num = Math.floor(Math.random() * 12) + 1;
 	img3Num = Math.floor(Math.random() * 12) + 1;
 	img4Num = Math.floor(Math.random() * 12) + 1;
+	counter = 0;
 }
 
 
@@ -74,9 +75,6 @@ function reset () {
 			}
 
 		});
-
-		
-
 
 
 			var img2Num = Math.floor(Math.random() * 12) + 1;
