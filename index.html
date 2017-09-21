@@ -9,30 +9,38 @@
 
   <h1>Crystals Collector!</h1>
     <div class="instructions">
-    You will be given a random number at the start of the game.<br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p> 
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
-    <section id="section">
-      <div class="random"></div>
-      <div class="scorecard">
-      <br><br>
-      Wins: 0<br><br>
-      Losses: 0
-      </div>
-    </section>
+
+   <div class = "container">
+    <div id="guessingNumber">
+      <h2>Number to Guess: <span id="value"></span></h2>   
+    </div>
+
+    <div id="scoreboard">
+      <h3><span id="status"></span></h3>
+      <h3>Wins: <span id="win"></span></h3>
+      <h3>Losses: <span id="loss"></span> </h3>
+      <h3>Your total score is: <span id="counter"></span></h3>
+    </div>
+  
     
       <div id="buttons">
-        <img src="assets/images/Diamond!.jpg" height="60" width="60">
+        <img id="img1" src="assets/images/Diamond!.jpg" height="60" width="60">
  
-        <img src="assets/images/emerald.jpg" height="60" width="60">
+        <img id="img2" src="assets/images/emerald.jpg" height="60" width="60">
       
-        <img src="assets/images/Kinetic_Crystal.jpg" height="60" width="60">
+        <img id="img3" src="assets/images/Kinetic_Crystal.jpg" height="60" width="60">
 
-        <img src="assets/images/peardrop.jpg" height="60" width="60">
+        <img id="img4" src="assets/images/peardrop.jpg" height="60" width="60">
       </div>
     
-    <div class="headline">Your total score is:</div>
-    <div class="yourscore"></div>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
